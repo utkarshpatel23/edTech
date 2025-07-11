@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edTech Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">edTech</div>
+            <ul class="nav-links">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Empower your future with online learning</h1>
+            <p>Learn at your own pace with our curated content.</p>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Featured Lecture</h2>
+            <video controls width="600">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Introduction to Coding</h3>
+            <p>A brief overview of the basics of programming using JavaScript.</p>
+        </section>
+
+        <section class="course-list">
+            <h2>Available Courses</h2>
+            <ul id="courseContainer"></ul>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2023 edTech Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
