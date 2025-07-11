@@ -5,8 +5,12 @@ const courses = [
   { id: 3, title: 'Machine Learning', description: 'Explore the fundamentals of machine learning algorithms.' }
 ];
 
+// expose courses globally so other pages can reuse the data
+window.courses = courses;
+
 function renderCourses() {
   const container = document.getElementById('courseContainer');
+  if (!container) return; // allow script reuse on other pages
   courses.forEach(course => {
     const li = document.createElement('li');
     li.className = 'course-item';
